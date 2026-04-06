@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Hubot+Sans:ital,wght@0,200..900;1,200..900&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="../css/style2.css" />
+  <script src="https://unpkg.com/feather-icons"></script>
+  <!-- <link rel="stylesheet" href="../css/style.css" /> -->
+  <style>
+    :root {
+ 
+  /* BACKGROUND CONTROL */
+  --bg-image: url("https://i.pinimg.com/1200x/6d/94/05/6d9405dfc8553e69952f86eb0eecdfb0.jpg");
+  --bg-overlay: rgba(0, 0, 0, 0);
+}
+  </style>
+
+  <body>
+    <div class="butterfly-follow">
+      <img src="../img/kupu.png" alt="butterfly" />
+    </div>
+
+    <!-- NAVBAR -->
+
+    <!-- navbar end -->
+
+    <!-- CARD UTAMA -->
+    <section class="article-wrapper">
+      <div class="glow-border">
+        <article class="article-card">
+          <!-- KIRI -->
+          <div class="article-main">
+            <h1>
+              Interaksi Manusia <br />
+              <span>dan Komputer</span>
+            </h1>
+
+            <div class="meta">
+              <span>Oleh <strong>Revaldi Ermansyah</strong></span>
+              <span>•</span>
+              <span>Mata Kuliah IMK</span>
+              <span>•</span>
+              <span>2025</span>
+              <span class="badge">UI/UX</span>
+              <span class="badge">Human Centered</span>
+            </div>
+
+            <!-- GAMBAR HARUS DI LUAR META -->
+            <div class="featured-image">
+              <img
+                src="../img/tentang-kami.jpg"
+                alt="Ilustrasi Interaksi Manusia dan Komputer"
+              />
+            </div>
+
+            <p class="intro">
+              Interaksi Manusia dan Komputer (IMK) adalah bidang ilmu yang
+              mempelajari bagaimana manusia berinteraksi dengan sistem komputer
+              melalui antarmuka yang dirancang agar efektif, efisien, dan nyaman
+              digunakan.
+            </p>
+
+            <div class="content">
+              <h2>Apa itu IMK?</h2>
+              <p>
+                IMK berfokus pada perancangan antarmuka pengguna (UI) dan
+                pengalaman pengguna (UX).
+              </p>
+
+              <h2>Contoh dalam Kehidupan Nyata</h2>
+              <ul>
+                <li>Mode gelap & terang untuk kenyamanan mata</li>
+                <li>Tombol mudah dijangkau jempol</li>
+                <li>Navigasi sederhana</li>
+                <li>Feedback visual</li>
+              </ul>
+            </div>
+          </div>
+          <!-- KANAN -->
+          <aside class="article-side">
+            <h3>Hey!</h3>
+            <p>
+              Halaman ini berisi rangkuman materi IMK yang dirancang dengan
+              prinsip IMK itu sendiri.
+            </p>
+
+            <ul class="focus-list">
+              <li>🎯 Kenyamanan pengguna</li>
+              <li>🧠 Kemudahan pemahaman</li>
+              <li>🎨 Estetika visual</li>
+              <li>⚡ Efisiensi interaksi</li>
+            </ul>
+            <div class="highlight">
+              <strong>IMK Insight:</strong>
+              <p>Desain yang baik adalah desain yang tidak terasa dirancang.</p>
+            </div>
+          </aside>
+        </article>  
+      </div>
+    </section>
+    <!-- CARD END -->
+
+    <!-- FOOTER -->
+    <footer class="footer-wrapper">
+      <div class="footer-card">
+        <div class="footer-social">
+          <a href="#"><i data-feather="twitch"></i></a>
+          <a href="#"><i data-feather="x"></i></a>
+          <a href="#"><i data-feather="twitter"></i></a>
+        </div>
+        
+    
+        <div class="footer-text">
+          <a href="#">Blog di WordPress.com</a>
+        </div>
+      </div>
+    </footer>
+    <!-- FOOTER END -->
+
+
+ <!-- my javascript -->
+    <script src="../js/script.js"></script>
+    <!-- feather icons -->
+    <script>
+      feather.replace();
+    </script>
+<!-- navbar -->
+    <script>
+      let lastScroll = 0;
+      const nav = document.querySelector(".nav-container");
+
+      window.addEventListener("scroll", () => {
+        const currentScroll = window.pageYOffset;
+
+        if (currentScroll > lastScroll && currentScroll > 100) {
+          // scroll ke bawah → sembunyi
+          nav.classList.add("hide");
+        } else {
+          // scroll ke atas → muncul
+          nav.classList.remove("hide");
+        }
+        lastScroll = currentScroll;
+      });
+    </script>
+  </body>
+</html>

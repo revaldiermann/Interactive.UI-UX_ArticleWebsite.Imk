@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Hubot+Sans:ital,wght@0,200..900;1,200..900&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="../css/style2.css" />
+  <script src="https://unpkg.com/feather-icons"></script>
+  <!-- <link rel="stylesheet" href="../css/style.css" /> -->
+  <style>
+    :root {
+ 
+  /* BACKGROUND CONTROL */
+  --bg-image: url("https://i.pinimg.com/1200x/6e/70/3c/6e703cefde72f37f36e263541842a5ef.jpg");
+  --bg-overlay: rgba(0, 0, 0, 0);
+}
+  </style>
+
+  <body>
+    <div class="butterfly-follow">
+      <img src="../img/4.png" alt="butterfly" />
+    </div>
+
+    <!-- NAVBAR -->
+    <div class="nav-container">
+      <!-- LOGO DI SAMPING -->
+      <div class="logo-box">
+        <img src="../img/logo.png" alt="butterfly" />
+      </div>
+
+      <nav class="navbar">
+        <div class="navbar-left">
+          <h1 class="navbar-title"><span>i</span>MK</h1>
+        </div>
+
+        <div class="navbar-nav">
+          <a href="../index.html">Beranda</a>
+          <a href="about.html">Tentang</a>
+          <a href="berita.html">Berita</a>
+        </div>
+
+        <div class="navbar-extra">
+          <button id="themeToggle" class="theme-toggle">🌙</button>
+          <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+        </div>
+      </nav>
+    </div>
+    <!-- navbar end -->
+
+    <!-- CARD UTAMA -->
+    
+  <section class="article-wrapper">
+    <div class="glow-border">
+    <article class="article-card">
+
+      <!-- KONTEN KIRI -->
+      <div class="article-main">
+
+        <h1>
+          Human Error <br />
+          <span>dan Keamanan Sistem</span>
+        </h1>
+
+        <div class="meta">
+          <span>Oleh <strong>Revaldi Ermansyah</strong></span>
+          <span>•</span>
+          <span>Mata Kuliah IMK</span>
+          <span>•</span>
+          <span>2025</span>
+        </div>
+
+        <div class="featured-image">
+          <img
+            src="../img/i4.jpeg"
+            alt="Ilustrasi Human Error dalam IMK"
+          />
+        </div>
+
+        <p class="intro">
+          Human Error adalah kesalahan yang dilakukan pengguna saat
+          berinteraksi dengan sistem komputer, baik karena desain
+          antarmuka yang kurang baik maupun keterbatasan manusia itu sendiri.
+        </p>
+
+        <div class="content">
+          <h2>Apa itu Human Error?</h2>
+          <p>
+            Dalam konteks IMK, human error bukan sepenuhnya kesalahan pengguna,
+            tetapi sering kali disebabkan oleh antarmuka yang membingungkan,
+            tidak konsisten, atau kurang memberikan umpan balik.
+          </p>
+
+          <h2>Jenis-Jenis Human Error</h2>
+          <ul>
+            <li><strong>Slip</strong> – Kesalahan tidak sengaja (salah klik)</li>
+            <li><strong>Lapse</strong> – Lupa langkah atau urutan</li>
+            <li><strong>Mistake</strong> – Salah pemahaman sistem</li>
+          </ul>
+
+          <h2>Keamanan dalam IMK</h2>
+          <p>
+            Keamanan dalam IMK berfokus pada bagaimana sistem melindungi
+            pengguna dari kesalahan fatal, kebocoran data, atau tindakan
+            berbahaya yang tidak disengaja.
+          </p>
+
+          <h2>Contoh Penerapan</h2>
+          <ul>
+            <li>Dialog konfirmasi saat menghapus data</li>
+            <li>Undo / Redo untuk membatalkan aksi</li>
+            <li>Validasi input pada form</li>
+            <li>Pesan error yang jelas dan ramah</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- SIDEBAR KANAN -->
+      <aside class="article-side">
+        <h3>Studi Kasus</h3>
+        <p>
+          Tombol “Delete” yang berdekatan dengan “Save” dapat
+          menyebabkan kesalahan fatal jika desainnya tidak jelas.
+        </p>
+
+        <p><strong>Solusi IMK:</strong></p>
+        <ul>
+          <li>⚠️ Warna peringatan</li>
+          <li>🛑 Dialog konfirmasi</li>
+          <li>↩️ Fitur undo</li>
+        </ul>
+
+        <p class="note">
+          Sistem yang baik adalah sistem yang mampu
+          meminimalkan dampak kesalahan manusia.
+        </p>
+      </aside>
+
+    </article>
+  </section>
+    <!-- CARD END -->
+
+    <!-- FOOTER -->
+    <footer class="footer-wrapper">
+      <div class="footer-card">
+        <div class="footer-social">
+          <a href="#"><i data-feather="twitch"></i></a>
+          <a href="#"><i data-feather="x"></i></a>
+          <a href="#"><i data-feather="twitter"></i></a>
+        </div>
+        
+    
+        <div class="footer-text">
+          <a href="#">Blog di WordPress.com</a>
+        </div>
+      </div>
+    </footer>
+    <!-- FOOTER END -->
+
+
+ <!-- my javascript -->
+    <script src="../js/script.js"></script>
+    <!-- feather icons -->
+    <script>
+      feather.replace();
+    </script>
+<!-- navbar -->
+    <script>
+      let lastScroll = 0;
+      const nav = document.querySelector(".nav-container");
+
+      window.addEventListener("scroll", () => {
+        const currentScroll = window.pageYOffset;
+
+        if (currentScroll > lastScroll && currentScroll > 100) {
+          // scroll ke bawah → sembunyi
+          nav.classList.add("hide");
+        } else {
+          // scroll ke atas → muncul
+          nav.classList.remove("hide");
+        }
+        lastScroll = currentScroll;
+      });
+    </script>
+  </body>
+</html>

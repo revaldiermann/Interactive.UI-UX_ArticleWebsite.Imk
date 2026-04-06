@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Hubot+Sans:ital,wght@0,200..900;1,200..900&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="../css/style2.css" />
+  <script src="https://unpkg.com/feather-icons"></script>
+  <!-- <link rel="stylesheet" href="../css/style.css" /> -->
+  <style>
+    :root {
+ 
+  /* BACKGROUND CONTROL */
+  --bg-image: url("https://i.pinimg.com/736x/95/37/d0/9537d02900ec80fef774657f5458cd7b.jpg");
+  --bg-overlay: rgba(0, 0, 0, 0);
+}
+  </style>
+
+  <body>
+    <div class="butterfly-follow">
+      <img src="../img/6.png" alt="butterfly" />
+    </div>
+
+    <!-- NAVBAR -->
+    <div class="nav-container">
+      <!-- LOGO DI SAMPING -->
+      <div class="logo-box">
+        <img src="../img/logo.png" alt="Logo IMK" />
+      </div>
+
+      <nav class="navbar">
+        <div class="navbar-left">
+          <h1 class="navbar-title"><span>i</span>MK</h1>
+        </div>
+
+        <div class="navbar-nav">
+          <a href="../index.html">Beranda</a>
+          <a href="about.html">Tentang</a>
+          <a href="berita.html">Berita</a>
+        </div>
+
+        <div class="navbar-extra">
+          <button id="themeToggle" class="theme-toggle">🌙</button>
+          <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+        </div>
+      </nav>
+    </div>
+    <!-- navbar end -->
+
+    <!-- CARD UTAMA -->
+    <section class="article-wrapper">
+      <div class="glow-border">
+      <article class="article-card">
+  
+        <!-- KONTEN UTAMA (KIRI) -->
+        <div class="article-main">
+  
+          <h1>
+            Artificial Intelligence <br />
+            <span>dalam Bidang IMK</span>
+          </h1>
+  
+          <div class="meta">
+            <span>Oleh <strong>Revaldi Ermansyah</strong></span>
+            <span>•</span>
+            <span>Mata Kuliah IMK</span>
+            <span>•</span>
+            <span>2025</span>
+          </div>
+  
+          <div class="featured-image">
+            <img
+              src="../img/i6.jpeg"
+              alt="Ilustrasi Artificial Intelligence dalam IMK"
+            />
+          </div>
+  
+          <p class="intro">
+            Artificial Intelligence (AI) dalam Interaksi Manusia dan Komputer
+            berperan dalam menciptakan sistem yang lebih cerdas, adaptif,
+            dan mampu memahami kebutuhan pengguna secara otomatis.
+          </p>
+  
+          <div class="content">
+            <h2>Apa Peran AI dalam IMK?</h2>
+            <p>
+              AI memungkinkan sistem komputer untuk menganalisis perilaku
+              pengguna, belajar dari interaksi, dan menyesuaikan antarmuka
+              maupun layanan agar lebih personal dan efisien.
+            </p>
+  
+            <h2>Contoh Penerapan AI dalam IMK</h2>
+            <ul>
+              <li>Chatbot & asisten virtual (ChatGPT, Siri, Google Assistant)</li>
+              <li>Rekomendasi konten (YouTube, Netflix, Spotify)</li>
+              <li>Face recognition & gesture control</li>
+              <li>Auto-complete & smart search</li>
+              <li>Adaptive UI (tampilan menyesuaikan kebiasaan pengguna)</li>
+            </ul>
+  
+            <h2>Manfaat AI bagi Pengalaman Pengguna</h2>
+            <p>
+              Dengan AI, interaksi menjadi lebih cepat, akurat,
+              dan terasa “manusiawi” karena sistem mampu memahami
+              konteks serta preferensi pengguna.
+            </p>
+  
+            <h2>Tantangan AI dalam IMK</h2>
+            <ul>
+              <li>Privasi dan keamanan data pengguna</li>
+              <li>Kepercayaan pengguna terhadap sistem AI</li>
+              <li>Transparansi pengambilan keputusan AI</li>
+            </ul>
+          </div>
+  
+        </div>
+  
+        <!-- SIDEBAR (KANAN) -->
+        <aside class="article-side">
+          <h3>Studi Kasus</h3>
+          <p>
+            Rekomendasi video YouTube menggunakan AI untuk
+            menampilkan konten sesuai minat pengguna.
+          </p>
+  
+          <p><strong>Dampak IMK:</strong></p>
+          <ul>
+            <li>🎯 Interaksi lebih relevan</li>
+            <li>⚡ Efisiensi waktu</li>
+            <li>🤖 Sistem terasa cerdas</li>
+          </ul>
+  
+          <p class="note">
+            AI yang baik dalam IMK adalah AI yang
+            membantu pengguna, bukan membingungkan.
+          </p>
+        </aside>
+  
+      </article>
+    </section>
+    <!-- CARD END -->
+
+    <!-- FOOTER -->
+    <footer class="footer-wrapper">
+      <div class="footer-card">
+        <div class="footer-social">
+          <a href="#"><i data-feather="twitch"></i></a>
+          <a href="#"><i data-feather="x"></i></a>
+          <a href="#"><i data-feather="twitter"></i></a>
+        </div>
+        
+    
+        <div class="footer-text">
+          <a href="#">Blog di WordPress.com</a>
+        </div>
+      </div>
+    </footer>
+    <!-- FOOTER END -->
+
+
+ <!-- my javascript -->
+    <script src="../js/script.js"></script>
+    <!-- feather icons -->
+    <script>
+      feather.replace();
+    </script>
+<!-- navbar -->
+    <script>
+      let lastScroll = 0;
+      const nav = document.querySelector(".nav-container");
+
+      window.addEventListener("scroll", () => {
+        const currentScroll = window.pageYOffset;
+
+        if (currentScroll > lastScroll && currentScroll > 100) {
+          // scroll ke bawah → sembunyi
+          nav.classList.add("hide");
+        } else {
+          // scroll ke atas → muncul
+          nav.classList.remove("hide");
+        }
+        lastScroll = currentScroll;
+      });
+    </script>
+  </body>
+</html>

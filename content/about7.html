@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Hubot+Sans:ital,wght@0,200..900;1,200..900&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="../css/style2.css" />
+  <script src="https://unpkg.com/feather-icons"></script>
+  <!-- <link rel="stylesheet" href="../css/style.css" /> -->
+  <style>
+    :root {
+ 
+  /* BACKGROUND CONTROL */
+  --bg-image: url("https://i.pinimg.com/736x/3a/b6/fa/3ab6fa277e6a4ed7fb8b72cdfb7cf675.jpg");
+  --bg-overlay: rgba(0, 0, 0, 0);
+}
+  </style>
+
+  <body>
+    <div class="butterfly-follow">
+      <img src="../img/7.png" alt="butterfly" />
+    </div>
+
+    <!-- NAVBAR -->
+    <div class="nav-container">
+      <!-- LOGO DI SAMPING -->
+      <div class="logo-box">
+        <img src="../img/logo.png" alt="butterfly" />
+      </div>
+
+      <nav class="navbar">
+        <div class="navbar-left">
+          <h1 class="navbar-title"><span>i</span>MK</h1>
+        </div>
+
+        <div class="navbar-nav">
+          <a href="../index.html">Beranda</a>
+          <a href="about.html">Tentang</a>
+          <a href="berita.html">Berita</a>
+        </div>
+
+        <div class="navbar-extra">
+          <button id="themeToggle" class="theme-toggle">🌙</button>
+          <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+        </div>
+      </nav>
+    </div>
+    <!-- navbar end -->
+
+    <!-- CARD UTAMA -->
+   
+<section class="article-wrapper">
+  <div class="glow-border">
+  <article class="article-card">
+
+    <!-- KONTEN UTAMA -->
+    <div class="article-main">
+      <h1>
+        Prinsip <br />
+        <span>User Intent dalam IMK</span>
+      </h1>
+
+      <div class="meta">
+        <span>Oleh <strong>Revaldi Ermansyah</strong></span>
+        <span>•</span>
+        <span>Mata Kuliah IMK</span>
+        <span>•</span>
+        <span>2025</span>
+      </div>
+
+      <div class="featured-image">
+        <img
+          src="../img/i7.jpeg"
+          alt="Ilustrasi User Intent dalam IMK"
+        />
+      </div>
+
+      <p class="intro">
+        User Intent adalah konsep dalam Interaksi Manusia dan Komputer
+        yang berfokus pada pemahaman tujuan, kebutuhan, dan harapan pengguna
+        ketika berinteraksi dengan sebuah sistem.
+      </p>
+
+      <div class="content">
+        <h2>Apa itu User Intent?</h2>
+        <p>
+          User Intent menjelaskan *mengapa* pengguna melakukan suatu aksi.
+          Desain IMK yang baik harus mampu mengantisipasi niat pengguna
+          dan menyediakan solusi dengan cepat dan jelas.
+        </p>
+
+        <h2>Jenis-Jenis User Intent</h2>
+        <ul>
+          <li><strong>Informational:</strong> pengguna ingin mencari informasi</li>
+          <li><strong>Navigational:</strong> pengguna ingin menuju halaman tertentu</li>
+          <li><strong>Transactional:</strong> pengguna ingin melakukan aksi (membeli, mengirim, mendaftar)</li>
+        </ul>
+
+        <h2>Penerapan User Intent dalam IMK</h2>
+        <ul>
+          <li>Search bar dengan auto-suggestion</li>
+          <li>Tombol CTA yang jelas dan kontekstual</li>
+          <li>Form yang singkat dan langsung ke tujuan</li>
+          <li>Menu navigasi yang intuitif</li>
+        </ul>
+
+        <h2>Dampak Jika User Intent Diabaikan</h2>
+        <p>
+          Sistem akan terasa membingungkan, pengguna mudah frustasi,
+          dan tingkat kegagalan interaksi meningkat.
+        </p>
+      </div>
+    </div>
+
+    <!-- SIDEBAR -->
+    <aside class="article-side">
+      <h3>Studi Kasus</h3>
+      <p>
+        Google Search menampilkan hasil berbeda
+        berdasarkan kata kunci, lokasi, dan riwayat pengguna
+        untuk menyesuaikan user intent.
+      </p>
+
+      <p><strong>Manfaat IMK:</strong></p>
+      <ul>
+        <li>🎯 Interaksi lebih tepat sasaran</li>
+        <li>🧠 Beban kognitif berkurang</li>
+        <li>⚡ Aksi pengguna lebih cepat</li>
+      </ul>
+
+      <p class="note">
+        Sistem yang memahami user intent
+        terasa lebih “mengerti” penggunanya.
+      </p>
+    </aside>
+
+  </article>
+</section>
+    <!-- CARD END -->
+
+    <!-- FOOTER -->
+    <footer class="footer-wrapper">
+      <div class="footer-card">
+        <div class="footer-social">
+          <a href="#"><i data-feather="twitch"></i></a>
+          <a href="#"><i data-feather="x"></i></a>
+          <a href="#"><i data-feather="twitter"></i></a>
+        </div>
+        
+    
+        <div class="footer-text">
+          <a href="#">Blog di WordPress.com</a>
+        </div>
+      </div>
+    </footer>
+    <!-- FOOTER END -->
+
+
+ <!-- my javascript -->
+    <script src="../js/script.js"></script>
+    <!-- feather icons -->
+    <script>
+      feather.replace();
+    </script>
+<!-- navbar -->
+    <script>
+      let lastScroll = 0;
+      const nav = document.querySelector(".nav-container");
+
+      window.addEventListener("scroll", () => {
+        const currentScroll = window.pageYOffset;
+
+        if (currentScroll > lastScroll && currentScroll > 100) {
+          // scroll ke bawah → sembunyi
+          nav.classList.add("hide");
+        } else {
+          // scroll ke atas → muncul
+          nav.classList.remove("hide");
+        }
+        lastScroll = currentScroll;
+      });
+    </script>
+  </body>
+</html>

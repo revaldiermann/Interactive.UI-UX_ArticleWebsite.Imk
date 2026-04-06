@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Hubot+Sans:ital,wght@0,200..900;1,200..900&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="../css/style2.css" />
+  <script src="https://unpkg.com/feather-icons"></script>
+  <!-- <link rel="stylesheet" href="../css/style.css" /> -->
+  <style>
+    :root {
+ 
+  /* BACKGROUND CONTROL */
+  --bg-image: url("https://i.pinimg.com/736x/e9/e7/a9/e9e7a9a54444d558ae2da421309b8b38.jpg");
+  --bg-overlay: rgba(0, 0, 0, 0);
+}
+  </style>
+
+  <body>
+    <div class="butterfly-follow">
+      <img src="../img/val.png" alt="butterfly" />
+    </div>
+
+    <!-- NAVBAR -->
+    <div class="nav-container">
+      <!-- LOGO DI SAMPING -->
+      <div class="logo-box">
+        <img src="../img/logo.png" alt="butterfly" />
+      </div>
+
+      <nav class="navbar">
+        <div class="navbar-left">
+          <h1 class="navbar-title"><span>i</span>MK</h1>
+        </div>
+
+        <div class="navbar-nav">
+          <a href="../index.html">Beranda</a>
+          <a href="about.html">Tentang</a>
+          <a href="berita.html">Berita</a>
+        </div>
+
+        <div class="navbar-extra">
+          <button id="themeToggle" class="theme-toggle">🌙</button>
+          <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+        </div>
+      </nav>
+    </div>
+    <!-- navbar end -->
+
+    <!-- CARD UTAMA -->
+    
+<section class="article-wrapper">
+  <class class="glow-border">
+  <article class="article-card">
+
+    <!-- KONTEN KIRI -->
+    <div class="article-main">
+      <h1>
+        Augmented Reality <br />
+        <span>dalam Interaksi Manusia dan Komputer</span>
+      </h1>
+
+      <div class="meta">
+        <span>Oleh <strong>Revaldi Ermansyah</strong></span>
+        <span>•</span>
+        <span>Mata Kuliah IMK</span>
+        <span>•</span>
+        <span>2025</span>
+      </div>
+
+      <div class="featured-image">
+        <img
+          src="../img/i8.jpeg"
+          alt="Ilustrasi Augmented Reality dalam IMK"
+        />
+      </div>
+
+      <p class="intro">
+        Augmented Reality (AR) adalah teknologi yang menggabungkan
+        objek virtual ke dalam dunia nyata secara real-time,
+        sehingga menciptakan pengalaman interaksi yang lebih imersif.
+      </p>
+
+      <div class="content">
+        <h2>Apa itu Augmented Reality?</h2>
+        <p>
+          AR menambahkan elemen digital seperti teks, gambar, animasi,
+          atau objek 3D ke lingkungan nyata melalui perangkat
+          seperti smartphone, tablet, atau kacamata AR.
+        </p>
+
+        <h2>Peran AR dalam IMK</h2>
+        <p>
+          Dalam IMK, AR digunakan untuk meningkatkan kualitas
+          interaksi antara manusia dan sistem komputer
+          dengan cara yang lebih alami dan intuitif.
+        </p>
+
+        <h2>Contoh Penerapan AR</h2>
+        <ul>
+          <li>Aplikasi filter kamera (Instagram, Snapchat)</li>
+          <li>Simulasi pendidikan dan pelatihan</li>
+          <li>AR Navigation pada Google Maps</li>
+          <li>Visualisasi produk sebelum membeli (IKEA Place)</li>
+        </ul>
+
+        <h2>Tantangan AR dalam IMK</h2>
+        <ul>
+          <li>Beban kognitif pengguna</li>
+          <li>Akurasi pelacakan objek</li>
+          <li>Kenyamanan dan kelelahan mata</li>
+          <li>Desain antarmuka AR yang kompleks</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- SIDEBAR KANAN -->
+    <aside class="article-side">
+      <h3>Kenapa AR Penting?</h3>
+      <p>
+        AR memperluas cara manusia berinteraksi
+        dengan sistem digital tanpa meninggalkan dunia nyata.
+      </p>
+
+      <p><strong>Manfaat dalam IMK:</strong></p>
+      <ul>
+        <li>🧠 Pembelajaran lebih visual</li>
+        <li>🎯 Interaksi lebih kontekstual</li>
+        <li>🌍 Pengalaman lebih imersif</li>
+        <li>⚡ Pemahaman lebih cepat</li>
+      </ul>
+
+      <p class="note">
+        AR yang dirancang dengan prinsip IMK
+        mampu meningkatkan efisiensi dan kenyamanan pengguna.
+      </p>
+    </aside>
+
+  </article>
+</section>
+
+    <!-- CARD END -->
+
+    <!-- FOOTER -->
+    <footer class="footer-wrapper">
+      <div class="footer-card">
+        <div class="footer-social">
+          <a href="#"><i data-feather="twitch"></i></a>
+          <a href="#"><i data-feather="x"></i></a>
+          <a href="#"><i data-feather="twitter"></i></a>
+        </div>
+        
+    
+        <div class="footer-text">
+          <a href="#">Blog di WordPress.com</a>
+        </div>
+      </div>
+    </footer>
+    <!-- FOOTER END -->
+
+
+ <!-- my javascript -->
+    <script src="../js/script.js"></script>
+    <!-- feather icons -->
+    <script>
+      feather.replace();
+    </script>
+<!-- navbar -->
+    <script>
+      let lastScroll = 0;
+      const nav = document.querySelector(".nav-container");
+
+      window.addEventListener("scroll", () => {
+        const currentScroll = window.pageYOffset;
+
+        if (currentScroll > lastScroll && currentScroll > 100) {
+          // scroll ke bawah → sembunyi
+          nav.classList.add("hide");
+        } else {
+          // scroll ke atas → muncul
+          nav.classList.remove("hide");
+        }
+        lastScroll = currentScroll;
+      });
+    </script>
+  </body>
+</html>

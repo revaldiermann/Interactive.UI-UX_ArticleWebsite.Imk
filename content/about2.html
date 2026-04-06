@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Hubot+Sans:ital,wght@0,200..900;1,200..900&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="../css/style2.css" />
+  <script src="https://unpkg.com/feather-icons"></script>
+  <!-- <link rel="stylesheet" href="../css/style.css" /> -->
+  <style>
+    :root {
+ 
+  /* BACKGROUND CONTROL */
+  --bg-image: url("https://i.pinimg.com/1200x/6e/49/e0/6e49e073e1fdf399c137475aa407018e.jpg");
+  --bg-overlay: rgba(0, 0, 0, 0);
+  
+}
+  </style>
+
+<body>
+  <div class="butterfly-follow">
+    <img src="../img/kodok.png" alt="butterfly" />
+  </div>
+
+  <!-- NAVBAR -->
+  <div class="nav-container">
+    <!-- LOGO DI SAMPING -->
+    <div class="logo-box">
+      <img src="../img/logo.png" alt="butterfly" />
+    </div>
+
+    <nav class="navbar">
+      <div class="navbar-left">
+        <h1 class="navbar-title"><span>i</span>MK</h1>
+      </div>
+
+      <div class="navbar-nav">
+        <a href=../index.html>Beranda</a>
+        <a href="about.html">Tentang</a>
+        <a href="berita.html">Berita</a>
+      </div>
+
+      <div class="navbar-extra">
+        <button id="themeToggle" class="theme-toggle">🌙</button>
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+  </div>
+  <!-- navbar end -->
+
+   <!-- ARTICLE -->
+   <section class="article-wrapper">
+    <div class="glow-border">
+    <article class="article-card">
+
+      <!-- KIRI -->
+      <div class="article-main">
+
+        <h1>
+          Prinsip <span>Usability</span><br />
+          dan User Experience
+        </h1>
+
+        <div class="meta">
+          <span>Oleh <strong>Revaldi Ermansyah</strong></span>
+          <span>•</span>
+          <span>Mata Kuliah IMK</span>
+          <span>•</span>
+          <span>2025</span>
+        </div>
+
+        <div class="featured-image">
+          <img src="../img/menu1.jpeg" alt="Ilustrasi User Experience" />
+        </div>
+
+        <p class="intro">
+          Usability dan User Experience (UX) merupakan konsep inti dalam
+          Interaksi Manusia dan Komputer yang berfokus pada kemudahan,
+          kenyamanan, dan kepuasan pengguna saat menggunakan sistem.
+        </p>
+
+        <div class="content">
+          <h2>Apa itu Usability?</h2>
+          <p>
+            Usability adalah tingkat kemudahan suatu sistem untuk digunakan
+            oleh pengguna dalam mencapai tujuan tertentu secara efektif,
+            efisien, dan memuaskan.
+          </p>
+
+          <h2>5 Komponen Usability (Nielsen)</h2>
+          <ul>
+            <li>Learnability – Mudah dipelajari</li>
+            <li>Efficiency – Cepat digunakan</li>
+            <li>Memorability – Mudah diingat</li>
+            <li>Errors – Minim kesalahan</li>
+            <li>Satisfaction – Memberikan kepuasan</li>
+          </ul>
+
+          <h2>User Experience (UX)</h2>
+          <p>
+            UX mencakup keseluruhan pengalaman pengguna, mulai dari tampilan
+            visual, alur interaksi, respon sistem, hingga emosi pengguna
+            selama berinteraksi dengan sistem.
+          </p>
+
+          <h2>Contoh Penerapan UX</h2>
+          <ul>
+            <li>Mode gelap & terang</li>
+            <li>Navigasi yang konsisten</li>
+            <li>Animasi halus sebagai feedback</li>
+            <li>Tombol yang mudah dijangkau</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- KANAN -->
+      <aside class="article-side">
+        <h3>Kenapa UX Penting?</h3>
+        <p>
+          UX yang baik membuat sistem:
+        </p>
+
+        <ul>
+          <li>✔ Mudah digunakan</li>
+          <li>✔ Mengurangi kesalahan</li>
+          <li>✔ Meningkatkan kepuasan</li>
+          <li>✔ Lebih inklusif</li>
+        </ul>
+
+        <p class="note">
+          Desain halaman ini menerapkan prinsip usability dan UX
+          sebagai contoh langsung dari materi IMK.
+        </p>
+      </aside>
+    </article>
+  </section>
+      <!-- article end -->
+       <!-- FOOTER -->
+    <footer class="footer-wrapper">
+      <div class="footer-card">
+        <div class="footer-social">
+          <a href="#"><i data-feather="twitch"></i></a>
+          <a href="#"><i data-feather="x"></i></a>
+          <a href="#"><i data-feather="twitter"></i></a>
+        </div>
+        
+    
+        <div class="footer-text">
+          <a href="#">Blog di WordPress.com</a>
+        </div>
+      </div>
+    </footer>
+    <!-- FOOTER END -->
+
+      
+
+  <script src="../js/script.js"></script>
+  <script>
+    feather.replace();
+  </script>
+  <!-- navbar -->
+  <script>
+    let lastScroll = 0;
+    const nav = document.querySelector(".nav-container");
+
+    window.addEventListener("scroll", () => {
+      const currentScroll = window.pageYOffset;
+
+      if (currentScroll > lastScroll && currentScroll > 100) {
+        // scroll ke bawah → sembunyi
+        nav.classList.add("hide");
+      } else {
+        // scroll ke atas → muncul
+        nav.classList.remove("hide");
+      }
+      lastScroll = currentScroll;
+    });
+  </script>
+</body>
+</html>

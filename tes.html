@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  /* GRID */
+.post-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+/* CARD */
+.post-card {
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+  border-radius: 28px;
+  background: rgba(0, 0, 0, 0.6);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
+}
+
+/* SLIDER */
+.slider-card {
+  min-height: 340px;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  padding: 20px;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: 
+    transform 0.6s cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 0.6s ease;
+}
+
+.slide.active {
+  opacity: 1;
+  transform: translateX(0);
+  position: relative;
+}
+
+.slide.exit {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+/* IMAGE */
+.slide img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 22px;
+  margin-bottom: 14px;
+}
+
+/* TEXT */
+.slide h3 {
+  font-size: clamp(1rem, 2vw, 1.3rem);
+  font-weight: 500;
+  color: #e5e7eb;
+}
+
+.slide p {
+  font-size: 0.9rem;
+  color: #b9bcc2;
+}
+
+/* BUTTON */
+.next-btn {
+  margin-top: 14px;
+  padding: 0.55rem 1.4rem;
+  border-radius: 999px;
+  border: none;
+  background: linear-gradient(135deg, #60a5fa, #22c55e);
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.next-btn:hover {
+  transform: translateX(6px);
+  box-shadow: 0 8px 24px rgba(34, 197, 94, 0.45);
+}
+
+.open-link {
+  display: inline-block;
+  margin-top: 12px;
+  font-size: 0.85rem;
+  color: #60a5fa;
+  text-decoration: none;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .post-card {
+    padding: 16px;
+  }
+}
+
+</style>
+<body>
+  <section class="post-section" id="materi">
+    <div class="post-grid">
+  
+      <!-- CARD 1 -->
+      <div class="post-card slider-card reveal">
+        <div class="slide active">
+          <img src="img/i1.jpeg" alt="">
+          <h3>PENGANTAR – IMK</h3>
+          <p>Pengenalan dasar Interaksi Manusia dan Komputer.</p>
+          <button class="next-btn">Selanjutnya →</button>
+        </div>
+  
+        <div class="slide">
+          <h3>Ruang Lingkup IMK</h3>
+          <p>Hubungan manusia, komputer, dan sistem interaktif.</p>
+          <button class="next-btn">Buka Materi</button>
+          <a href="content/about1.html" class="open-link">📘 Detail</a>
+        </div>
+      </div>
+  
+      <!-- CARD 2 -->
+      <div class="post-card slider-card reveal">
+        <div class="slide active">
+          <img src="img/i2.jpeg" alt="">
+          <h3>UI & UX</h3>
+          <p>Dasar User Interface dan User Experience.</p>
+          <button class="next-btn">Selanjutnya →</button>
+        </div>
+  
+        <div class="slide">
+          <h3>Perbedaan UI & UX</h3>
+          <p>UI fokus visual, UX fokus pengalaman.</p>
+          <a href="content/about2.html" class="open-link">📘 Detail</a>
+        </div>
+      </div>
+  
+      <!-- Card lain bisa copy pola ini -->
+      
+    </div>
+  </section>
+  <script>
+    document.querySelectorAll(".slider-card").forEach(card => {
+      const slides = card.querySelectorAll(".slide");
+      let index = 0;
+    
+      card.querySelectorAll(".next-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+          slides[index].classList.remove("active");
+          slides[index].classList.add("exit");
+    
+          index++;
+          if (slides[index]) {
+            slides[index].classList.add("active");
+          }
+        });
+      });
+    });
+    </script>
+    
+  
+</body>
+</html>

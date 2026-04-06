@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Hubot+Sans:ital,wght@0,200..900;1,200..900&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="../css/style2.css" />
+  <script src="https://unpkg.com/feather-icons"></script>
+  <!-- <link rel="stylesheet" href="../css/style.css" /> -->
+  <style>
+    :root {
+ 
+  /* BACKGROUND CONTROL */
+  --bg-image: url("https://i.pinimg.com/736x/1e/ac/4a/1eac4a978389437e68873d0d2ba598e5.jpg");
+  --bg-overlay: rgba(0, 0, 0, 0);
+}
+  </style>
+
+  <body>
+    <div class="butterfly-follow">
+      <img src="../img/5.png" alt="butterfly" />
+    </div>
+
+    <!-- NAVBAR -->
+    <div class="nav-container">
+      <!-- LOGO DI SAMPING -->
+      <div class="logo-box">
+        <img src="../img/logo.png" alt="butterfly" />
+      </div>
+
+      <nav class="navbar">
+        <div class="navbar-left">
+          <h1 class="navbar-title"><span>i</span>MK</h1>
+        </div>
+
+        <div class="navbar-nav">
+          <a href="../index.html">Beranda</a>
+          <a href="about.html">Tentang</a>
+          <a href="berita.html">Berita</a>
+        </div>
+
+        <div class="navbar-extra">
+          <button id="themeToggle" class="theme-toggle">🌙</button>
+          <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+        </div>
+      </nav>
+    </div>
+    <!-- navbar end -->
+
+    <!-- CARD UTAMA -->
+
+  <section class="article-wrapper">
+    <div class="glow-border">
+    <article class="article-card">
+
+      <!-- KIRI (KONTEN UTAMA) -->
+      <div class="article-main">
+        <h1>
+          Prinsip Desain <br />
+          <span>Antarmuka Pengguna</span>
+        </h1>
+
+        <div class="meta">
+          <span>Oleh <strong>Revaldi Ermansyah</strong></span>
+          <span>•</span>
+          <span>Mata Kuliah IMK</span>
+          <span>•</span>
+          <span>2025</span>
+        </div>
+
+        <div class="featured-image">
+          <img
+            src="../img/i5.jpeg"
+            alt="Ilustrasi Prinsip Desain Antarmuka"
+          />
+        </div>
+
+        <p class="intro">
+          Prinsip desain antarmuka dalam Interaksi Manusia dan Komputer
+          bertujuan untuk menciptakan sistem yang mudah dipahami,
+          konsisten, dan memberikan pengalaman pengguna yang optimal.
+        </p>
+
+        <div class="content">
+          <h2>Apa itu Prinsip Desain UI?</h2>
+          <p>
+            Prinsip desain UI adalah pedoman dalam merancang tampilan
+            dan interaksi sistem agar pengguna dapat menggunakan sistem
+            dengan cepat tanpa kebingungan.
+          </p>
+
+          <h2>Heuristik Nielsen (Ringkas)</h2>
+          <ul>
+            <li><strong>Visibility</strong> – Status sistem selalu terlihat</li>
+            <li><strong>Match</strong> – Bahasa sistem sesuai dunia nyata</li>
+            <li><strong>User Control</strong> – Ada undo & redo</li>
+            <li><strong>Consistency</strong> – Tampilan konsisten</li>
+            <li><strong>Error Prevention</strong> – Cegah kesalahan</li>
+            <li><strong>Recognition</strong> – Minimalkan ingatan</li>
+            <li><strong>Flexibility</strong> – Efisien untuk pemula & ahli</li>
+            <li><strong>Aesthetic</strong> – Tampilan sederhana & rapi</li>
+            <li><strong>Error Recovery</strong> – Pesan error jelas</li>
+            <li><strong>Help</strong> – Bantuan mudah diakses</li>
+          </ul>
+
+          <h2>Contoh Penerapan Nyata</h2>
+          <p>
+            Ikon keranjang 🛒 pada e-commerce memudahkan pengguna
+            mengenali fungsi tanpa perlu membaca teks.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- KANAN (SIDEBAR) -->
+      <aside class="article-side">
+        <h3>Kenapa Ini Penting?</h3>
+        <p>
+          Tanpa prinsip UI yang baik, pengguna akan:
+        </p>
+
+        <ul>
+          <li>😕 Bingung</li>
+          <li>❌ Sering salah</li>
+          <li>🚪 Meninggalkan aplikasi</li>
+        </ul>
+
+        <p class="note">
+          Prinsip desain UI adalah jembatan antara
+          teknologi dan kenyamanan manusia.
+        </p>
+      </aside>
+
+    </article>
+  </section>
+
+</body>
+</html>
+
+    <!-- CARD END -->
+
+    <!-- FOOTER -->
+    <footer class="footer-wrapper">
+      <div class="footer-card">
+        <div class="footer-social">
+          <a href="#"><i data-feather="twitch"></i></a>
+          <a href="#"><i data-feather="x"></i></a>
+          <a href="#"><i data-feather="twitter"></i></a>
+        </div>
+        
+    
+        <div class="footer-text">
+          <a href="#">Blog di WordPress.com</a>
+        </div>
+      </div>
+    </footer>
+    <!-- FOOTER END -->
+
+
+ <!-- my javascript -->
+    <script src="../js/script.js"></script>
+    <!-- feather icons -->
+    <script>
+      feather.replace();
+    </script>
+<!-- navbar -->
+    <script>
+      let lastScroll = 0;
+      const nav = document.querySelector(".nav-container");
+
+      window.addEventListener("scroll", () => {
+        const currentScroll = window.pageYOffset;
+
+        if (currentScroll > lastScroll && currentScroll > 100) {
+          // scroll ke bawah → sembunyi
+          nav.classList.add("hide");
+        } else {
+          // scroll ke atas → muncul
+          nav.classList.remove("hide");
+        }
+        lastScroll = currentScroll;
+      });
+    </script>
+  </body>
+</html>
